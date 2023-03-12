@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  height:100px;
+  width:100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ justify-content: end;
+ align-items: center;
+  background-color: skyblue;
+}
+.active{
+  border-bottom: 2px solid white;
+}
+.nav{
+  text-decoration: none;
+  color: white;
+padding: 20px;
+margin-right: 40px;
+font-weight: bold;
+font-size: 25px;
+}
+.nav:hover{
+  color: black;
+}
+.nav-heading{
+  color: white;
+  position: absolute;
+  left:50px;
+  font-size: xx-large;
+}
+
+
+/*Home page*/
+
+.container{
+  display: flex;
+  flex-direction: row;
+  background-image: url('../src/Components/Images/Project-background.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.left-section{
+height:100vh;
+width:50%;
+position: absolute;
+right:35%;
+}
+.right-section{
+height:100vh;
+width:50%;
+
+}
+.right-section img{
+  height:100vh;
+  width:auto;
+  position: absolute;
+  right:0;
+}
+.container h1{
+  color:skyblue;
+  font-size: 75px;
+}
+.container h3{
+  font-size: 50px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/*About Page*/
+
+.about-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../src/Components/Images/Project-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height:auto;
+}
+.container-about-page{
+  width:50%;
+  height:auto;
+  margin:50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-page h1{
+  text-align: center;
+  font-size: 50px;
+  color: skyblue;
 }
+.about-page p{
+  margin: 20px;
+  font-size: 30px;
+
+}
+
+/*Project-Page*/
+
+
+.project-page{
+  background-image: url('../src/Components/Images/Project-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 145vh;
+text-align: center;
+
+}
+
+.project-images{
+position: absolute;
+top:30%;
+left:11%;
+color:white;
+
+}
+
+
+.imgs{
+  height:200px;
+  width:300px;
+  border: 2px solid skyblue;
+  margin: 20px;
+
+}
+h3{
+  color:white;
+
+}
+.one{
+  display: flex;
+  flex-direction: row;
+}
+.two{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.git{
+  position: absolute;
+  top:141vh;
+  left:43%;
+}
+
+/*Contact-page*/
+
+.contact-page{
+  position: absolute;
+  top:100px;
+  background-image: url('../src/Components/Images/Project-background.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 140vh;
+  width:100%;
+ text-align: center;
+ color: white;
+ margin-top: 0;
+}
+.form-div{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+input{
+  height: 40px;
+  width:40%;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+label{
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+button{
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color:skyblue;
+color: white;
+font-size: large;
+font-weight: bolder;
+}
+button:hover{
+  color: black;
+  background-color: white;
+}
+.contact-info{
+  font-size:30px ;
+}
+
